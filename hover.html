@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+.box {
+  color: #fff;
+  margin: 0 auto; /* for bringing the box in centre*/
+  background: #2db34a; /* COLOR OF BOX BEFORE HOVER EFFECT*/
+  border-radius: 16px;  /* just to make horizontal line bit curve*/
+  cursor: pointer;      /* cursor is used to point some particular element*/
+  height: 100px;        /* height of the box before hover effect*/
+  line-height: 100px;   /* height of the text written inside the box*/
+  text-align: center;   /* make sure text comes in between inside the box*/
+  transition-property: background, border-radius;  /* transition-property  specifies the name of the CSS property the transition effect is for */
+  transition-duration: 2s;/* THIS PROPERTY IS VRY IMPORTANT OTHERWISE DURATION WILL BE 0 & THERE WONT BE ANY EFFECT*/
+  transition-timing-function: linear;  /*transition-timing-function property specifies the speed curve of the transition effect.*/
+  width: 100px;
+}
+.box:hover {          /* hover selector is used to select elements when you mouse over them.*/
+  background: orange;
+  border-radius: 50%;
+
+}
+  </style>
+</head>
+<body>
+<div class="box">BOX</div> <!-- div which has text written box -->
+</body>
+</html> 
